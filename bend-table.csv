@@ -1,0 +1,6 @@
+# SPDX-License-Identifier: CERN-OHL-W-2.0
+feature_id,angle_deg,inside_radius_mm,k_factor,bend_allowance_mm,sequence,part,notes
+F1-bearing-flange,90,4.0,0.44,7.32,1,frame-cylinder,top-edge outward roll to 4 mm radius bearing lip
+F2-stiffening-bead,—,6.0,0.44,—,2,frame-cylinder,bottom-edge rolled-in bead — formed on bead roller not press brake; allowance handled in roller setup
+F3-cylinder-roll,—,400,—,—,3,frame-cylinder,rolled to 400 mm inside radius on slip-roll; cylinder closure not a bend in the allowance sense
+F4-lug-bracket-90,90,3.0,0.44,5.83,1,lug-bracket,bracket 90 deg vertical-to-flange bend, 3 mm IR

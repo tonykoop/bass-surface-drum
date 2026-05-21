@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: CERN-OHL-W-2.0
+supplier,part,sku,url,min_qty,notes
+onlinemetals.com,CRS sheet 1.5 mm,1008-1018-CRS-16ga,https://www.onlinemetals.com/,1,cut-to-size service for the 2600x150 mm frame blank
+onlinemetals.com,CRS plate 4 mm,1008-1018-CRS-3/16,https://www.onlinemetals.com/,1,for clamp ring
+onlinemetals.com,CRS sheet 3 mm,1008-1018-CRS-11ga,https://www.onlinemetals.com/,1,for lug brackets
+local steel service center,laser-cut clamp ring,—,—,1,outsource the annulus cut if no laser access in shop
+moosehide.ca,raw steerhide 1.5-2 mm,—,https://moosehide.ca/,1,Canadian hide supplier — also water-buffalo and elk options
+centralia hide & fur,raw steerhide thick,—,—,1,US-domestic alternative
+mcmaster-carr,M10 hardware kit,—,https://www.mcmaster.com/,1,bolts + washers + locknuts
+vic firth,STH1 bass mallet,STH1,https://vicfirth.com/,1,or any felt-head bass mallet 50+ mm head diameter
+airgas,ER70S-2 TIG rod,—,https://www.airgas.com/,1,1 lb is plenty for this build
+remo,bass head 26in synthetic,P3-1326-BB,https://www.remo.com/,1,backup if natural hide is unavailable; will shift target band slightly

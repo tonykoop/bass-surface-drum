@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: CERN-OHL-W-2.0
+part,qty,spec,role,notes
+M10x35 hex bolt,6,grade 8.8 zinc-plated,tension bolt — clamp ring to lug bracket,torqued in star pattern during tuning
+M10 washer,12,zinc-plated steel,under bolt head and nut,distributes load
+M10 nylon-insert locknut,6,zinc-plated steel,prevents back-off under vibration,replace if removed more than 5x
+M5x12 button-head,12,stainless A2,doubler tack-fasteners (alternative to spot welds),only used if spot welder unavailable
+3 mm steel weld filler,—,ER70S-2,frame seam butt weld,TIG with argon shield gas
+felt strip 4mm x 2m,1,wool felt adhesive-back,under-head dampening (optional),trims (1,1) overtone if too prominent in V1
+rubber feet 25mm,3,Sorbothane or similar,floor-rest mounting,V1 mounting hardware — not in V0 build
