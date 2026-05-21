@@ -1,0 +1,39 @@
+# SPDX-License-Identifier: CERN-OHL-W-2.0
+target_metric,predicted,measured,units,pass_fail,notes
+incoming_frame_blank_thickness,1.5,,mm,,verify with calipers at 4 points
+incoming_clamp_ring_thickness,4.0,,mm,,verify with calipers
+incoming_hide_thickness,1.75,,mm,,1.5-2.0 acceptable across whole blank
+coupon_bend_4mm_radius_pass,pass,,—,,no outside-fiber cracks on 100x100 scrap
+coupon_bead_roll_pass,pass,,—,,bead full depth no out-of-plane buckle on scrap
+coupon_seam_weld_180_bend_pass,pass,,—,,butt weld bends 180 deg around mandrel without cracking
+frame_OD_after_roll,800,,mm,,acceptance tolerance +/- 1.0
+frame_out_of_round,<1.5,,mm,,measure at 6 points 60 deg apart
+bearing_flange_radius,4.0,,mm,,gauge with radius card +/- 0.5
+stiffening_bead_depth,3.0,,mm,,measure with depth gauge or feeler minimum
+frame_seam_weld_visual,pass,,—,,no visible cracks porosity or undercut
+lug_bracket_PCD_accuracy,+/-1,,mm,,bolt-hole-center positional tolerance
+doubler_attachment,6 spots,,—,,no loose corners
+ovalization_under_load_worst_case,>0.5,,mm,,worst-bound from wolfram is > budget — bead must work
+ovalization_under_load_best_case,<0.5,,mm,,best-bound with bead within budget
+head_mount_first_pass_visual,pass,,—,,no pucker no wrinkle after star pattern pass 1
+head_mount_drift_24h,<5,,Hz,,acceptable settling drift first 24 h after pass 2
+fundamental_f01_center_strike,50,,Hz,,acceptance band [42 60]
+overtone_f11_off_center,79.7,,Hz,,acceptance ratio 1.55-1.65 x fundamental
+overtone_f21_off_center,106.8,,Hz,,acceptance ratio 2.0-2.25 x fundamental
+sustain_T60_center,>2.0,,s,,fundamental decay to -60 dB; cinematic boom target
+sustain_T60_off_center,<1.5,,s,,off-center hits decay faster — desired
+azimuthal_pitch_evenness,<1,,Hz,,strike center at 4 cardinal points; range of f01
+re_tension_repeatability,<3,,Hz,,detune to baseline retune to same torque measure f01 drift
+torque_at_target_pitch,15-18,,Nm,,track on most-recently-tuned bolt at acceptance
+head_visual_inspection_post_tuning,pass,,—,,no cracks no hair pull no seam splitting
+weight_assembled,~6.5,,kg,,frame 4 kg + clamp ring 14 kg minus head 1 kg — wait recompute
+weight_frame_alone,~4,,kg,,
+weight_clamp_ring_alone,~14,,kg,,
+weight_head_alone,~1,,kg,,
+total_radial_pull_on_frame,7064,,N,,from wolfram model — design load
+edge_safety_post_finish,pass,,—,,no sharp edges on bearing flange or paint cure complete
+mallet_strike_response_consistency,pass,,—,,5 consecutive strikes within 1 dB peak
+release_gate_human_drummer_review,—,,—,,private until experienced frame-drum player taps
+release_gate_metal_safety_review,—,,—,,private until welds reviewed by shop lead
+release_gate_supplier_IP_review,—,,—,,private until hide supplier sourcing confirmed
+release_gate_measured_prototype,—,,—,,private until V0 build measured and documented
