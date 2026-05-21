@@ -1,0 +1,36 @@
+# SPDX-License-Identifier: CERN-OHL-W-2.0
+name,value,unit,source,confidence
+head_outside_diameter,800,mm,design intent,high
+head_effective_diameter,760,mm,design intent — inside of bearing radius,high
+effective_membrane_radius,380,mm,head_effective_diameter / 2,high
+frame_depth,120,mm,design intent,med
+frame_wall_thickness,1.5,mm,design intent — cold-rolled steel,med
+frame_material,cold-rolled-steel,—,design intent (1018 or similar),med
+frame_bearing_edge_radius,4,mm,rolled-in flange profile,med
+frame_stiffening_bead_radius,6,mm,rolled-in bottom bead,med
+frame_seam_strategy,butt-TIG-with-internal-doubler,—,fabrication-plan.md,med
+frame_doubler_width,50,mm,seam reinforcement strip,low
+target_fundamental_f01,50,Hz,acoustic intent — sub-bass cinematic,high
+acceptance_band_low,42,Hz,acoustic intent,high
+acceptance_band_high,60,Hz,acoustic intent,high
+predicted_f11,79.7,Hz,wolfram-starter.wl bessel-root scaling,med
+predicted_f21,106.8,Hz,wolfram-starter.wl bessel-root scaling,med
+predicted_f02,114.8,Hz,wolfram-starter.wl bessel-root scaling,med
+membrane_surface_density,1.20,kg/m2,thick steerhide est. — 1.5mm @ 800 kg/m3 wet baseline,low
+membrane_tension_per_length,2960,N/m,solved from f01 target,low
+total_radial_pull,7064,N,T * 2 pi a,low
+hoop_count,1,—,single head,high
+tension_bolt_count,6,—,Variant A clamp ring,med
+tension_bolt_thread,M10,—,Variant A,med
+tension_bolt_grade,8.8,—,corrosion-painted hardware,low
+clamp_ring_thickness,4,mm,Variant A,med
+clamp_ring_material,cold-rolled-steel,—,Variant A,med
+flesh_hoop_thickness,3,mm,Variant B alternative,low
+rope_diameter,8,mm,Variant B alternative — braided nylon,low
+mallet_type,soft-cinematic-bass,—,bought,high
+head_material_v0,steerhide-raw-1.5mm,—,V0 prototype,med
+head_blank_diameter,1000,mm,trim after wet-mount,med
+head_finished_diameter,920,mm,after lap-tension and trim,low
+ovalization_budget,0.5,mm,frame round-out tolerance under load,med
+moment_of_inertia_frame_section,—,mm4,depends on bead geometry — see solidworks-plan.md,low
+mounting,floor-rest-or-stand-mount,—,deferred to makerspace follow-up,low
