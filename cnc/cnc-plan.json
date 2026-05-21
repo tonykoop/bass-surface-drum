@@ -1,0 +1,46 @@
+{
+  "_spdx": "CERN-OHL-W-2.0",
+  "instrument": "bass-surface-drum",
+  "blueprint_version": "v0.1.0",
+  "parts": [
+    {
+      "id": "frame-flat",
+      "process": "shear-or-laser",
+      "stock": "CRS 1.5 mm, 2600x150 mm",
+      "dxf": "drawings/frame-flat.dxf",
+      "ops_after_cut": ["press-brake-top-flange", "bead-roll-bottom", "slip-roll", "tig-seam", "doubler-spot-weld"]
+    },
+    {
+      "id": "internal-doubler",
+      "process": "shear",
+      "stock": "CRS 1.5 mm, frame offcut",
+      "dxf": "drawings/doubler-flat.dxf",
+      "ops_after_cut": ["spot-weld-to-frame-inside"]
+    },
+    {
+      "id": "clamp-ring",
+      "process": "fiber-laser",
+      "stock": "CRS 4 mm, 900x900 mm",
+      "dxf": "drawings/clamp-ring.dxf",
+      "ops_after_cut": ["deburr", "paint"]
+    },
+    {
+      "id": "lug-bracket",
+      "process": "fiber-laser",
+      "stock": "CRS 3 mm, 500x250 mm sheet (6 nested)",
+      "dxf": "drawings/lug-bracket.dxf",
+      "qty": 6,
+      "ops_after_cut": ["press-brake-bend", "tig-weld-to-frame"]
+    }
+  ],
+  "tolerances": {
+    "frame_OD_mm": "800 +/- 1.0",
+    "frame_out_of_round_mm": "< 1.5",
+    "bearing_flange_radius_mm": "4 +/- 0.5",
+    "stiffening_bead_depth_mm": ">= 3"
+  },
+  "totals": {
+    "shop_time_min": 135,
+    "consumables_usd_est": 25
+  }
+}

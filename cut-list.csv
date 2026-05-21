@@ -1,0 +1,6 @@
+# SPDX-License-Identifier: CERN-OHL-W-2.0
+part,blank_size_mm,material,nesting_notes
+frame-cylinder,2520x130,CRS 1.5 mm,single long blank — needs 2600x150 sheet stock, grain along long axis
+internal-doubler,55x125,CRS 1.5 mm,nests in offcut of frame-cylinder sheet
+clamp-ring,880x880,CRS 4 mm,laser-cut from 900x900 plate; OD 870 mm annulus
+lug-bracket-flat,80x70,CRS 3 mm,6 copies nest on a single 500x250 sheet

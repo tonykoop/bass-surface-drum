@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: CERN-OHL-W-2.0
+op_no,part,machine,setup,operation,duration_min,notes
+1,frame-flat,shear or fiber laser,2600x150 stock loaded flat,shear or laser cut to 2513x120 + tab/slot edges,2,tabs are 6x10 mm on right edge slots 6.5x11 mm on left
+2,clamp-ring,fiber laser or plasma,900x900 4 mm plate,cut annulus OD 870 ID 770 plus 6x M10 clearance holes on 850 PCD,8,etch one index notch on OD
+3,lug-bracket-flat,fiber laser or plasma,500x250 3 mm sheet,nest 6 flat L-blanks 80x70,6,grain along long axis
+4,doubler,shear,frame offcut,cut 50x120 rectangle,1,—
+5,frame-flange,press brake,4 mm radius punch and die,90 deg outward bend top edge entire 2513 mm length,4,plan for springback at 1.5 mm CRS — overbend by 2 deg
+6,frame-bead,bead roller,6 mm round die,3 passes along bottom edge entire 2513 mm length,6,each pass deeper; final depth 3 mm minimum
+7,frame-roll,slip roll,400 mm minimum radius,3 passes to roll cylinder; check round each pass,20,two-person operation; support trailing edge
+8,frame-seam-weld,TIG bench,butt joint interlocked with tabs,full pass weld with ER70S-2 filler 60 A approx,15,back purge if available; dress weld flush after
+9,doubler-attach,spot welder,inside frame across seam,6 spots in 2x3 grid 25 percent and 75 percent width 20 percent 50 percent 80 percent depth,2,or M5 button-head bolts with countersunk holes if no spot welder
+10,lug-bracket-bend,press brake,3 mm radius punch and die,90 deg bend at 40 mm from datum 6 brackets,6,—
+11,lug-bracket-weld,TIG bench,jig 60 deg angular spacing 45 mm below bearing edge,fillet weld lug to frame outside,30,jig from a scrap plywood disk with 6 wedges glued at 60 deg
+12,clamp-ring-deburr,bench,—,edge break and corner break all holes,5,prevents head tear if clamp ring inverts
+13,paint,booth or outdoor,wire stand for entire assembly,matte black enamel 2 coats,30,allow 24 h cure before head mount
