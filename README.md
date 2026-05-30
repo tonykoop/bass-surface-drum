@@ -1,10 +1,12 @@
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 # Bass Surface Drum
 
+Status: L2 V5 build-packet candidate.
+
 A very large (800 mm OD) single-head frame drum with a **rolled sheet-metal frame**, tuned to a sub-bass acceptance band centered at **50 Hz** (~G1) for cinematic boom and slow processional pulse.
 
 > Part of the Heifer Zephyr sheet-metal-instruments sprint, Round 5 (percussion).
-> V5 blueprint — not yet a measured build.
+> V5 migration surface — not yet a measured build; CAD/DXF/acoustic claims remain pending review or measurement before fabrication authority.
 
 ## Family & target
 
@@ -49,6 +51,8 @@ The frame has two integral rolled-edge features: a 4 mm-radius outward bearing f
 | [`fabrication-plan.md`](fabrication-plan.md) | Cut → form → join → finish → inspect sequence |
 | [`assembly-manual.md`](assembly-manual.md) | 9-step V0 head-mount procedure (Variant A) |
 | [`validation.csv`](validation.csv) | 35 gates from incoming through release |
+| [`visual-output-register.csv`](visual-output-register.csv) | V5 artifact authority register |
+| [`cad/mcp-session-log.md`](cad/mcp-session-log.md) | V5 CAD/creative-tool provenance stub |
 | [`risks.md`](risks.md) | Risk register + release gates |
 | [`supplier-rfq.md`](supplier-rfq.md), [`visual-bom-brief.md`](visual-bom-brief.md), [`photo-shotlist.md`](photo-shotlist.md) | Capstone-side documents |
 | [`learn-to-play/`](learn-to-play/) | Strike map + 3 beginner exercises |
@@ -67,4 +71,4 @@ Per-file SPDX headers indicate which license applies.
 
 ## Status
 
-V5 **blueprint**. The packet is private until each release gate in `risks.md` is cleared. The frame, clamp ring, and head specifications are complete enough for a competent sheet-metal fabricator to begin cutting blanks; the prototype build then writes back measured values into `validation.csv`.
+Status: L2 V5 build-packet candidate. The packet is private until each release gate in `risks.md` is cleared. Existing dimensions, tuning targets, Wolfram outputs, SolidWorks plans, flat-pattern notes, and CNC plans are treated as planning/review surfaces, not fabrication authority, until reviewed CAD/DXF or measured prototype evidence is committed and registered in `visual-output-register.csv`.
