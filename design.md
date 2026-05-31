@@ -110,7 +110,7 @@ Total radial pull `F_total ≈ 7064 N` is resisted by hoop stress in the frame. 
 σ_hoop = F_total / (2 π a t) — incorrect for a thin shell loaded uniformly at one edge
 ```
 
-That equation is the closed-form pressure-vessel hoop stress and is not the right one here. For a shell loaded by a uniform radial line load at one edge, the correct deflection/stress model is the **circular ring bending** problem — see `wolfram-starter.wl` for the calibrated calculation. Sanity check: a rolled 1.5 mm steel hoop with a stiffening bead is empirically used for sub-bass concert bass drums of similar diameter; this design uses thicker stock and a deeper section than a typical 14"–18" snare hoop, so the structural envelope is conservative.
+That equation is the closed-form pressure-vessel hoop stress and is not the right one here. For a shell loaded by a uniform radial line load at one edge, the correct deflection/stress model is the **circular ring bending** problem — see `bass-surface-drum-starter.wl` for the calibrated calculation. Sanity check: a rolled 1.5 mm steel hoop with a stiffening bead is empirically used for sub-bass concert bass drums of similar diameter; this design uses thicker stock and a deeper section than a typical 14"–18" snare hoop, so the structural envelope is conservative.
 
 ## Head Selection (V0)
 
