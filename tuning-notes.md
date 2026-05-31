@@ -33,7 +33,7 @@ Use a phone tuner app or a USB mic + Sonic Visualiser for measurement; the funda
 | Low tension, cinematic| 1.20      | 2100    | 42.1                |
 | High tension, tight   | 1.20      | 4200    | 59.6                |
 
-(See `wolfram-starter.wl` for the math.)
+(See `bass-surface-drum-starter.wl` for the math.)
 
 ## Off-Center Strike
 

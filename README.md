@@ -40,7 +40,7 @@ The frame has two integral rolled-edge features: a 4 mm-radius outward bearing f
 |---|---|
 | [`design.md`](design.md) | Parametric design narrative, family position, acoustic model |
 | [`parameters.csv`](parameters.csv) | Every dimension a downstream agent could need |
-| [`wolfram-starter.wl`](wolfram-starter.wl) | Bessel-mode predictions, rim-tension solver, ovalization bounds, sensitivity |
+| [`bass-surface-drum-starter.wl`](bass-surface-drum-starter.wl) | Bessel-mode predictions, rim-tension solver, ovalization bounds, sensitivity |
 | [`tuning-notes.md`](tuning-notes.md) | Three-pass star-pattern tuning method |
 | [`solidworks-plan.md`](solidworks-plan.md) | Master layout, 4 child parts, feature trees, equations |
 | [`flat-pattern-checklist.md`](flat-pattern-checklist.md) | Per-DXF spec with CUT/BENDS/ETCH layers |

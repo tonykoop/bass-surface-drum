@@ -39,7 +39,7 @@ Key citations:
 
 ## Files produced
 
-- Total: **25 files** (4 license, 1 design.md, 1 parameters.csv, 1 wolfram-starter.wl, 1 tuning-notes.md, 1 solidworks-plan.md, 1 flat-pattern-checklist.md, 1 bend-table.csv, 1 cut-list.csv, 1 bom.csv, 1 hardware.csv, 1 sourcing.csv, 1 fabrication-plan.md, 1 assembly-manual.md, 1 supplier-rfq.md, 1 visual-bom-brief.md, 1 validation.csv, 1 risks.md, 1 photo-shotlist.md, 4 subdir READMEs, 1 explorer.html planned, 1 README.md planned, 1 agent-record.md)
+- Total: **25 files** (4 license, 1 design.md, 1 parameters.csv, 1 bass-surface-drum-starter.wl, 1 tuning-notes.md, 1 solidworks-plan.md, 1 flat-pattern-checklist.md, 1 bend-table.csv, 1 cut-list.csv, 1 bom.csv, 1 hardware.csv, 1 sourcing.csv, 1 fabrication-plan.md, 1 assembly-manual.md, 1 supplier-rfq.md, 1 visual-bom-brief.md, 1 validation.csv, 1 risks.md, 1 photo-shotlist.md, 4 subdir READMEs, 1 explorer.html planned, 1 README.md planned, 1 agent-record.md)
 - All files have appropriate SPDX-License-Identifier headers (CC-BY-4.0 for docs, CERN-OHL-W-2.0 for hardware data).
 - All committed across 5 phase PRs to `tonykoop/bass-surface-drum`, each PR squash-merged on `main`.
 
