@@ -129,16 +129,6 @@ sensitivityEstimate = Dataset[{
 }];
 
 (* ============================================================
-   Outputs
-   ============================================================ *)
-Print["Predicted modal frequencies:"];
-predictedModes
-Print["Structural summary (frame ring under membrane load):"];
-structuralSummaryEstimate
-Print["Sensitivity to head and tension:"];
-sensitivityEstimate
-
-(* ============================================================
    Calibration slot — fill in after first prototype measurement
    measurements = {
      <|"mode" -> "(0,1)", "predictedHz" -> 50.0, "measuredHz" -> ???|>,
@@ -146,3 +136,73 @@ sensitivityEstimate
      ...
    };
    ============================================================ *)
+
+(* ============================================================
+   Interactive deployable app — circular-membrane bass surface drum.
+   Exposes head diameter, membrane surface density, and target fundamental
+   as controls; recomputes tension, Bessel modal frequencies, and the
+   frame-ring ovalization bounds live. ALL OUTPUTS ARE EMPIRICAL ESTIMATES.
+   ============================================================ *)
+
+(* Pure helpers parameterized by the live controls (no global state) *)
+tensionFor[dia_, sigma_, f01_] :=
+  sigma * (2 Pi (dia/2/1000) f01 / alpha01)^2;   (* N/m *)
+
+modeFreqFor[alpha_, dia_, sigma_, f01_] :=
+  (alpha / (2 Pi (dia/2/1000))) Sqrt[tensionFor[dia, sigma, f01]/sigma];
+
+ovalizationMMFor[dia_, sigma_, f01_, iFactor_] := Module[
+  {Rloc = dia/2/1000, tM = frameThicknessMMEstimate/1000,
+   dM = frameDepthMMEstimate/1000, q, ImmW},
+  q = tensionFor[dia, sigma, f01];
+  ImmW = iFactor (tM^3 dM)/12;
+  1000 q Rloc^4 / (Esteel ImmW)
+];
+
+Manipulate[
+  Module[
+    {Tloc, pull, ovWorst, ovBest, modeRows, f01},
+    f01 = targetF01;
+    Tloc = tensionFor[headDiaMM, sigmaKgm2, f01];
+    pull = Tloc * 2 Pi (headDiaMM/2/1000);
+    ovWorst = ovalizationMMFor[headDiaMM, sigmaKgm2, f01, 1];
+    ovBest  = ovalizationMMFor[headDiaMM, sigmaKgm2, f01, 5];
+    modeRows = {#[[1]], #[[2]],
+        Round[modeFreqFor[#[[2]], headDiaMM, sigmaKgm2, f01], 0.1],
+        Round[modeFreqFor[#[[2]], headDiaMM, sigmaKgm2, f01]/f01, 0.001]} & /@
+      besselRoots;
+    Column[{
+      Style["Bass Surface Drum — Acoustic & Frame Estimates", Bold, 14],
+      Style["All values are EMPIRICAL ESTIMATES — pending prototype measurement.",
+        Italic, Gray],
+      Grid[{
+        {"Required rim tension (ESTIMATE)",
+          Row[{NumberForm[Tloc, {6, 0}], " N/m"}]},
+        {"Total radial frame pull (ESTIMATE)",
+          Row[{NumberForm[pull, {6, 0}], " N"}]},
+        {"Frame ovalization, worst bound (ESTIMATE)",
+          Row[{NumberForm[ovWorst, {5, 2}], " mm"}]},
+        {"Frame ovalization, best bound (ESTIMATE)",
+          Row[{NumberForm[ovBest, {5, 2}], " mm"}]},
+        {"Within 0.5 mm budget (best bound)?",
+          If[ovBest <= 0.5, "YES (estimate)", "NO (estimate)"]}
+        }, Frame -> All, Alignment -> Left, Background -> {None, {LightYellow}}],
+      Style["Predicted Bessel modal frequencies (ESTIMATE)", Bold],
+      Grid[
+        Prepend[modeRows, {"mode (m,n)", "alpha", "freq Hz", "ratio f01"}],
+        Frame -> All, Alignment -> Left,
+        Background -> {None, {LightBlue, {White}}}]
+    }, Spacings -> 1.2]
+  ],
+  {{headDiaMM, headEffectiveDiameterMMEstimate,
+    "head effective diameter (mm) — ESTIMATE"}, 400, 1000, 10,
+    Appearance -> "Labeled"},
+  {{sigmaKgm2, membraneSurfaceDensityEstimate,
+    "membrane surface density (kg/m^2) — ESTIMATE"}, 0.6, 2.0, 0.05,
+    Appearance -> "Labeled"},
+  {{targetF01, targetF01Estimate,
+    "target fundamental f01 (Hz) — ESTIMATE"}, 30, 90, 1,
+    Appearance -> "Labeled"},
+  ControlPlacement -> Left,
+  SaveDefinitions -> True
+]
