@@ -17,6 +17,9 @@ p.intro{font-size:17px}
 .btn.primary{background:var(--accent);color:#fff}
 ul.files{font-family:var(--mono);font-size:14px;columns:2;gap:24px}
 ul.files a{color:var(--walnut)}
+.img-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin:8px 0}
+.img-cell{margin:0}.img-cell img{width:100%;border:1px solid var(--rule);border-radius:6px;display:block;background:#fff}
+.img-cell figcaption{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:4px}
 .muted{color:var(--muted);font-size:13px}
 footer{margin-top:44px;color:var(--muted);font-size:12px;font-family:var(--mono)}
 </style></head>
@@ -25,7 +28,10 @@ footer{margin-top:44px;color:var(--muted);font-size:12px;font-family:var(--mono)
 <p class="status">Status: L2 V5 build-packet candidate.</p></header>
 <p class="intro">&lt;!-- SPDX-License-Identifier: CC-BY-4.0 --&gt; --- slug: bass-surface-drum display_name: Bass Surface Drum family: drum subfamily: frame-drum acoustic_class: single-membrane-low-tension target_tuning: fundamental_hz: 50 acceptance_band_hz: [42, 60] partials_strategy: bessel-circular-membrane-modes geometry: head_outside_diameter_mm: 800 head_effective_diameter_mm: 760 frame_depth_mm: 120 frame_wall_thickness_mm: 1.5 rim_bearing_radius_mm: 4 ergonomic_envelope: player_position: seated or stand-mounted mallet: large soft cinematic mallet (bought) strike_zone: center for fundamental, off-center for higher modes license: hardware: CERN-OHL-W-2.0 docs: CC-BY-4.0 ---</p>
 <section id="wolfram"><h2><span class="eyebrow">Run it — Wolfram Cloud</span>Interactive acoustic model</h2>
-<div class="wf-actions"><a class="btn primary" href="https://www.wolframcloud.com/obj/wrfcoin/Musical_Instruments/percussion/bass-surface-drum/bass-surface-drum-starter.wl" target="_blank" rel="noopener">&#8599; Open full interactive model</a></div><iframe class="wf-frame" src="https://www.wolframcloud.com/obj/wrfcoin/Musical_Instruments/percussion/bass-surface-drum/bass-surface-drum-starter.wl" title="Interactive Wolfram model" loading="lazy"></iframe><p class="muted">Live interactive acoustic model (Wolfram Cloud, Public-Execute). Drag the sliders; every value is computed from <strong>estimate placeholders</strong> — pending measurement, not fabrication authority.</p>
+<div class="wf-actions"><a class="btn primary" href="https://www.wolframcloud.com/obj/wrfcoin/Musical_Instruments/percussion/bass-surface-drum/bass-surface-drum-interactive" target="_blank" rel="noopener">&#8599; Open full interactive model</a></div><iframe class="wf-frame" src="https://www.wolframcloud.com/obj/wrfcoin/Musical_Instruments/percussion/bass-surface-drum/bass-surface-drum-interactive" title="Interactive Wolfram model" loading="lazy"></iframe><p class="muted">Live interactive acoustic model (Wolfram Cloud, Public-Execute). Drag the sliders; every value is computed from <strong>estimate placeholders</strong> — pending measurement, not fabrication authority.</p>
+</section>
+<section id="images"><h2>Concept images</h2>
+<div class="img-grid"><figure class="img-cell"><img src="images/hero-render.png" alt="bass-surface-drum — hero-render.png" loading="lazy"><figcaption>hero-render.png</figcaption></figure><figure class="img-cell"><img src="images/exploded-diagram.png" alt="bass-surface-drum — exploded-diagram.png" loading="lazy"><figcaption>exploded-diagram.png</figcaption></figure><figure class="img-cell"><img src="images/macro/bearing-flange-clamp-ring.png" alt="bass-surface-drum — bearing-flange-clamp-ring.png" loading="lazy"><figcaption>bearing-flange-clamp-ring.png</figcaption></figure></div><p class="muted">Concept renders — not fabrication authority.</p>
 </section>
 <section id="files"><h2>Build packet</h2>
 <ul class="files"><li><a href="design.md" target="_blank">design.md</a></li><li><a href="bom.csv" target="_blank">bom.csv</a></li><li><a href="cut-list.csv" target="_blank">cut-list.csv</a></li><li><a href="visual-output-register.csv" target="_blank">visual-output-register.csv</a></li><li><a href="validation.csv" target="_blank">validation.csv</a></li><li><a href="sourcing.csv" target="_blank">sourcing.csv</a></li><li><a href="risks.md" target="_blank">risks.md</a></li></ul></section>

@@ -159,7 +159,7 @@ ovalizationMMFor[dia_, sigma_, f01_, iFactor_] := Module[
   1000 q Rloc^4 / (Esteel ImmW)
 ];
 
-Manipulate[
+bassSurfaceDrumExplorer = Manipulate[
   Module[
     {Tloc, pull, ovWorst, ovBest, modeRows, f01},
     f01 = targetF01;
