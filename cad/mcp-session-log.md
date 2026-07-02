@@ -27,3 +27,5 @@ session creates or modifies an artifact. A future row may use `fabrication`
 only when the output traces to reviewed CAD/DXF/design-table data or measured
 prototype evidence and the artifact is also promoted in
 `visual-output-register.csv`.
+| fable-v5-refresh-2026-07-01 | claude-code (Fable 5) + OpenSCAD CLI | parameters.csv, design.md | cad/bass-surface-drum.scad | cad_authoring | pending_measurement | self_checked | Parametric membrane-frame envelope master (frame OD 800 mm, depth 120 mm, wall 1.5 mm, 6 x M10 clamp-ring bolt field, effective membrane dia 760 mm) — all from parameters.csv. Tuning-sensitive rolled bead/flange + membrane tension out of scope. openscad render check: pass (Simple: yes, exit 0). NOT fabrication authority until reviewed. |
+| fable-v5-refresh-2026-07-01 | claude-code (Fable 5) | Bessel-root circular-membrane model | wolfram/bass-surface-drum-wolfram-model.wl | analysis_source | derived_preview | unreviewed | Membrane tension / modal-frequency model; source-only (not executed). L2 evidence. |

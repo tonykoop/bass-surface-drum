@@ -58,6 +58,8 @@ The frame has two integral rolled-edge features: a 4 mm-radius outward bearing f
 | [`learn-to-play/`](learn-to-play/) | Strike map + 3 beginner exercises |
 | [`agent-record.md`](agent-record.md) | qmd citations, assumptions, confidence, next-round task |
 | [`explorer.html`](explorer.html) | Studio explorer for this packet |
+| [`cad/bass-surface-drum.scad`](cad/bass-surface-drum.scad) | Parametric membrane-frame envelope master (pending_measurement; renders clean in OpenSCAD) |
+| [`evolution/`](evolution/) | StudioPipeline Stage-0 intake (design intent, master manifest, revisions) |
 
 ## License
 

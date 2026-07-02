@@ -1,0 +1,34 @@
+{
+  "product": "bass-surface-drum",
+  "pipeline": "studiopipeline:evolution-pipeline",
+  "stage": "0-intake",
+  "master_revision": "rev-A (pre-commit intake, 2026-07-01)",
+  "generated": "2026-07-01",
+  "cad_masters": [
+    {
+      "path": "cad/bass-surface-drum.scad",
+      "format": "openscad-source",
+      "sha256": "5621eaa165744873b245a05e191245d716b93a84541c22788b053e9b454c7bec",
+      "authority": "pending_measurement",
+      "lossy": false,
+      "notes": "Parametric membrane-frame envelope (frame cylinder + bearing flange + stiffening bead + clamp ring + bolt field + membrane disc). Tuning-sensitive bead/flange/tension out of scope."
+    },
+    {
+      "path": "parameters.csv",
+      "format": "parameter-table",
+      "sha256": "1ede71450e5f8e7e5bd9e242f11846ce416285827846425e90de6c7f7a661871",
+      "authority": "pending_measurement",
+      "lossy": false,
+      "notes": "Design-intent parameter table; all rows are planning surfaces until reviewed CAD/measured evidence lands."
+    },
+    {
+      "path": "wolfram/bass-surface-drum-wolfram-model.wl",
+      "format": "wolfram-source",
+      "sha256": "fbac680e8155bf893b6093eabab0ae8288be4d24823e26ceaba1bc551d42fc17",
+      "authority": "derived_preview",
+      "lossy": false,
+      "notes": "Membrane tension / modal-frequency model; source-only (not executed). L2 evidence."
+    }
+  ],
+  "notes": "OpenSCAD envelope + parameters.csv are the current masters; SolidWorks parts are planned (solidworks-plan.md) but not yet authored, and no STEP export exists. Gate A (Alpha workspace compile) not yet run."
+}
